@@ -1,0 +1,16 @@
+@import './style.scss';
+
+main{
+    background: url('../assets/hero-photo.webp') no-repeat;
+    width: 320px;
+    height: 240px;
+}
+
+h1{
+    color: $primary-color;
+    font-size: 2.1rem;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 2.45rem;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,33 @@
+/* style for mobile devices */
+
+* {
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+
+/*colours*/
+$primary-color: #FFDDEB;
+$second-color: #122263;
+$third-color: #C4E9D3;
+$fourth-color: #EFF4FF;
+
+/*fonts*/
+@font-face {
+    font-family: 'Magic Retro';
+    src: url('../typography/magic-retro.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Magic Retro';
+}
+
+body{
+  font-family: 'Inter';
+}
+
+@import url('./_hero.scss');
+@import url('./_menu.scss');

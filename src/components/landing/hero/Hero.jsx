@@ -4,11 +4,10 @@ function Hero() {
 
     return (
     <main>
-       <p>foto</p>
+      <h1>Tarot, té & galletas</h1>
     </main>
     )
 
 }
-
 
 export default Hero;
