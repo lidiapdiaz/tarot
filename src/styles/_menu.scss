@@ -1,0 +1,54 @@
+@import './style.scss';
+
+nav{
+    background-color: $third-color;
+}
+
+
+/*estilos para el boton/icono que despliega el menu*/
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.icon-menu{
+    cursor: pointer;
+    color:$second-color;
+    font-weight: 900;
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 0.2rem;
+}
+
+.MenuHamburguesa{
+    height: 0vh;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    &.activo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 19vh;
+        opacity: 1;
+    }
+}
+
+
+ul{
+    list-style: none;
+}
+
+nav li {
+    padding: 1rem;
+    a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    color:$second-color;
+    }
+    &:hover{
+        background-color: $primary-color;
+    }
+}
