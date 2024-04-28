@@ -1,7 +1,6 @@
 /* style for mobile devices */
 
 * {
-    max-width: 320px;
     margin: 0;
     padding: 0;
     box-sizing: content-box;
@@ -23,11 +22,22 @@ $fourth-color: #EFF4FF;
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Magic Retro';
+  color: $primary-color;
+  font-weight: 500;
 }
 
 body{
   font-family: 'Inter';
+  background-color:$second-color; 
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+html{
+  background-color: #e0e0e0;
 }
 
 @import url('./_hero.scss');
 @import url('./_menu.scss');
+@import url('./_mainContent.scss');
+@import url('./_advices.scss');

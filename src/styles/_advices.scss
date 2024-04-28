@@ -1,0 +1,31 @@
+
+.luna{
+    margin: 2rem 0;
+    position: relative;
+    z-index: 200;
+    left: 9px;
+}
+
+.te{
+    position: relative;
+    z-index: 100;
+    left: 165px;
+    bottom: 170px;
+    animation: infinite 10s viento;
+    animation-direction: alternate;
+}
+
+@keyframes viento {
+    0%{
+    left: 135px;
+    bottom: 170px;
+    transform: rotate(10deg);
+    }
+
+
+    100%{
+        left: 184px;
+        bottom: 170px;
+        transform: rotate(-5deg);
+    }
+}

@@ -1,0 +1,62 @@
+@import './App.scss';
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 90px;
+}
+
+p{
+    color: $fourth-color;
+    padding: 0 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.manos{
+    z-index: 200;
+    position: relative;
+    animation: infinite 8s manos;
+}
+
+.bola{
+    z-index: 100;
+    position: relative;
+    animation: infinite 8s bola;
+}
+
+@keyframes bola {
+    0%{
+        bottom:30px;
+    }
+
+    50%{
+        bottom:-5px;
+    }
+
+    100%{
+        bottom:30px;
+    }
+}
+
+
+@keyframes manos {
+    0%{
+        top:215px;
+    }
+
+    50%{
+        top:190px;
+    }
+
+    100%{
+        top: 215px;
+    }
+}

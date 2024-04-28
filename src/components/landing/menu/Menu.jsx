@@ -3,14 +3,13 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 
-
 function Menu() {
 
     const [menu, setMenu] = useState (false);
 
-   const toggleMenu = () =>{
+    const toggleMenu = () =>{
     setMenu(!menu)
-   }
+    }
 
     return (
     <>
